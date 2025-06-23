@@ -30,8 +30,8 @@
         }
         .players-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
             margin-top: 30px;
         }
         .player-card {
@@ -42,6 +42,9 @@
             border: 2px solid #0066cc;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+            display: flex;
+            flex-direction: column;
+            min-height: 280px;
         }
         .player-card:hover {
             transform: translateY(-5px);
@@ -54,16 +57,24 @@
             margin-bottom: 10px;
             color: #ff4444;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+            min-height: 2.2em;
+            line-height: 1.1;
+            display: flex;
+            align-items: center;
         }
         .player-grade {
             font-size: 1.2em;
             margin-bottom: 15px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
+            min-height: 1.4em;
+            display: flex;
+            align-items: center;
         }
         .player-stats {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
+            flex-grow: 1;
         }
         .stat {
             background: rgba(0,102,204,0.3);
@@ -72,6 +83,9 @@
             text-align: center;
             backdrop-filter: blur(5px);
             border: 1px solid rgba(0,102,204,0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .sr-value {
             font-size: 1.3em;
@@ -88,6 +102,7 @@
             border-radius: 8px;
             backdrop-filter: blur(5px);
             border: 1px solid rgba(0,102,204,0.3);
+            flex-shrink: 0;
         }
         .last-updated {
             text-align: center;
@@ -113,6 +128,7 @@
         <div class="players-grid">
 
             
+
             <div class="player-card">
                 <div class="player-name">Lenny Cheron RUP</div>
                 <div class="player-grade">🥉 BRONZE</div>
@@ -123,7 +139,7 @@
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -150,7 +166,7 @@
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -177,7 +193,7 @@
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -200,11 +216,11 @@
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">9.9</div>
+                        <div class="sr-value">10.0</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -227,11 +243,11 @@
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">9.9</div>
+                        <div class="sr-value">10.0</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -254,11 +270,11 @@
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">9.9</div>
+                        <div class="sr-value">10.0</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -281,11 +297,11 @@
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">9.9</div>
+                        <div class="sr-value">10.0</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -303,17 +319,18 @@
             </div>
 
             
+
             <div class="player-card">
                 <div class="player-name">guillaume Reynet</div>
                 <div class="player-grade">🥉 BRONZE</div>
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">8.5</div>
+                        <div class="sr-value">9.5</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -330,19 +347,46 @@
                 </div>
             </div>
 
-           
             
+
+            <div class="player-card">
+                <div class="player-name">Maxime Smokiih - RUP</div>
+                <div class="player-grade">🥉 BRONZE</div>
+                <div class="player-stats">
+                    <div class="stat">
+                        <div>SR</div>
+                        <div class="sr-value">9.5</div>
+                    </div>
+                    <div class="stat">
+                        <div>Courses</div>
+                        <div>9</div>
+                    </div>
+                    <div class="stat">
+                        <div>Podiums</div>
+                        <div>0</div>
+                    </div>
+                    <div class="stat">
+                        <div>Victoires</div>
+                        <div>0</div>
+                    </div>
+                </div>
+                <div class="sr-history">
+                    <strong>Évolution SR (5 dernières courses):</strong><br>
+&nbsp;&nbsp;+0.5<br>&nbsp;&nbsp;+0.5<br>&nbsp;&nbsp;+0.5<br>&nbsp;&nbsp;+0.5<br>&nbsp;&nbsp;+0.5<br>
+                </div>
+            </div>
+
             <div class="player-card">
                 <div class="player-name">Thibault Blossier</div>
                 <div class="player-grade">🥉 BRONZE</div>
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">7.8</div>
+                        <div class="sr-value">8.6</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -365,11 +409,11 @@
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">7.8</div>
+                        <div class="sr-value">8.6</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -392,11 +436,11 @@
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">7.8</div>
+                        <div class="sr-value">8.6</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -419,11 +463,11 @@
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">6.4</div>
+                        <div class="sr-value">6.8</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -446,11 +490,11 @@
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">6.4</div>
+                        <div class="sr-value">6.8</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -473,11 +517,11 @@
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">5.7</div>
+                        <div class="sr-value">5.9</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -500,11 +544,11 @@
                 <div class="player-stats">
                     <div class="stat">
                         <div>SR</div>
-                        <div class="sr-value">5.7</div>
+                        <div class="sr-value">5.9</div>
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -521,7 +565,8 @@
                 </div>
             </div>
 
-           
+            
+
             <div class="player-card">
                 <div class="player-name">enzo eldiablo RUP</div>
                 <div class="player-grade">🥉 BRONZE</div>
@@ -532,7 +577,7 @@
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -559,7 +604,7 @@
                     </div>
                     <div class="stat">
                         <div>Courses</div>
-                        <div>7</div>
+                        <div>9</div>
                     </div>
                     <div class="stat">
                         <div>Podiums</div>
@@ -578,7 +623,7 @@
 
         </div>
         <div class="last-updated">
-            Dernière mise à jour : 24/06/2025 à 00:03
+            Dernière mise à jour : 24/06/2025 à 00:21
         </div>
         <div class="backup-info">
             💾 Sauvegarde automatique activée - Les 5 dernières versions sont conservées
